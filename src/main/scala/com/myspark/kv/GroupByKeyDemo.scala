@@ -45,8 +45,6 @@ object GroupByKeyDemo {
     })
   //  shebaoRes.collect().foreach(println(_))
 
-
-
     //模拟医保数据
     val yibaoRdd = sc.makeRDD(List((1,("内存",8000,"CN")),(1,("内存",5000,"CN")),(1,("cpu",7000,"US")),(3,("手机",5000,"FN")),(4,("冰箱",1510,"JP"))),3)
     val groupRdd = yibaoRdd.groupByKey()
